@@ -5,4 +5,4 @@ server = a.createServer((req,res) => {
     res.end("<h1 style='color:red; text-align:center' >this is my first node server</h1>")
 })
 
-server.listen(4000, ()=>{console.log('server running')})
+server.listen(3000, ()=>{console.log('server running')})

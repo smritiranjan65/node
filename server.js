@@ -1,10 +1,11 @@
 http = require('node:http')
-// Creating a server
+fs = require('node:fs')
+// Creating a server and parsing data
 server = http.createServer((req, res) =>{
-
-    data = {name:"smriti", location:"patna"}
-    res.writeHead(200, {"Content-Type":"application/json"})
-    res.end(JSON.stringify(data))
+html = fs.readFileSync('./index.html', 'utf-8')
+    
+    res.writeHead(200, {"Content-Type":"text/html"})
+    res.end(html)
 })
 
 // server response

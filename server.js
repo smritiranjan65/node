@@ -1,8 +1,8 @@
 http = require('node:http')
 // Creating a server
 server = http.createServer((req, res) =>{
-    res.writeHead(404)
-    res.end("hey there")
+    res.writeHead(200, {"Content-Type":"text/plain"})
+    res.end("<h1>hey there</h1>")
 })
 
 // server response

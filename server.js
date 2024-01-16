@@ -2,10 +2,9 @@ http = require('node:http')
 fs = require('node:fs')
 // Creating a server and parsing data
 server = http.createServer((req, res) =>{
-html = fs.readFileSync('./index.html', 'utf-8')
-    
-    res.writeHead(200, {"Content-Type":"text/html"})
-    res.end(html)
+// routing files
+    if(req.url === '/'){res.end('./index.html')}
+    if(req.url === '/home'){res.end('home page')}
 })
 
 // server response

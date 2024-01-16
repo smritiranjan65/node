@@ -3,7 +3,7 @@ fs = require('node:fs')
 // fs.writeFileSync('./b.txt', 'hasmukhwa')
 
 // writing file asyncrhonously and updating(append-): code below
-fs.writeFile('./c.txt', 'pyara hasmukh ',{flag: "a"},(error)=>{
+fs.writeFile('./c.txt', 'pyari hasmukh',{flag: "a"},(error)=>{
     if(error){console.log(error)}
     else{console.log('written')}
 })

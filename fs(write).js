@@ -1,6 +1,6 @@
 fs = require('node:fs')
 // writing file system syncronously: code below
-// fs.writeFileSync('./b.txt', 'hasmukhwa')
+ fs.writeFileSync('./b.txt', 'hasmukhwa')
 
 // writing file asyncrhonously and updating(append-): code below
 fs.writeFile('./c.txt', 'pyari hasmukh',{flag: "a"},(error)=>{

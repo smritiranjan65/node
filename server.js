@@ -3,7 +3,7 @@ fs = require('node:fs')
 // Creating a server and parsing data
 server = http.createServer((req, res) =>{
 // routing files
-    if(req.url === '/'){res.end('./index.html')}
+    if(req.url === './index.html'){res.end('./index.html')}
     if(req.url === '/home'){res.end('home page')}
 })
 

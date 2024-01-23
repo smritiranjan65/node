@@ -1,6 +1,6 @@
 fs = require('node:fs')
 
-readableStream = fs.createReadStream('./new.txt', {encoding:'utf-8'})
+readableStream = fs.createReadStream('./new.txt', {encoding:'utf-8', highWaterMark: 3})
 
 writeableStream = fs.createWriteStream('./patna.txt')
 

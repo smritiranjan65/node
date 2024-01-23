@@ -10,4 +10,4 @@ readableStream.on("data", (chunk )=>{
     writeableStream.write(chunk)
 })
 
-console.log(readableStream)
+//console.log(readableStream)

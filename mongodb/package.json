@@ -12,5 +12,8 @@
     "dev"
   ],
   "author": "smriti",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^6.3.0"
+  }
 }
